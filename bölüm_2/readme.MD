@@ -1,0 +1,1 @@
+## Arkadaşlar, buradaki handler dosyasında bulunan command handlerdaki bir değişkliği söylemem gerek. Videoda command handler klasörünü "commands" olarak tanıtmıştım. Ama onu komutlar olarak değiştirdim. Ona göre "commands" adlı klasörünüzün adını "komutlar" yapınız.
