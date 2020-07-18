@@ -5,12 +5,12 @@ let table = new ascii("Komutlar");
 table.setHeading("Komut", "Durum");
 
 module.exports = (app) => {
-    readdirSync("./commands/").forEach(dir => {
+    readdirSync("./komutlar/").forEach(dir => {
 
-        const commands = readdirSync(`./commands/${dir}/`).filter(file => file.endsWith(".js"));
+        const commands = readdirSync(`./komutlar/${dir}/`).filter(file => file.endsWith(".js"));
     
         for (let file of commands) {
-            let pull = require(`../commands/${dir}/${file}`);
+            let pull = require(`../komutlar/${dir}/${file}`);
     
             if (pull.name) {
                 app.commands.set(pull.name, pull);
